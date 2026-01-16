@@ -2,7 +2,7 @@
 NVCC = nvcc
 
 # Compiler flags
-CXXFLAGS = -std=c++11 -O3 -I./include -Xcompiler -fno-gnu-unique
+CXXFLAGS = -std=c++11 -O3 -I./include -Xcompiler -fno-gnu-unique -D_FORCE_INLINES -Xcompiler -fpermissive
 LDFLAGS = -lcublas -lcudart
 
 # Directories
