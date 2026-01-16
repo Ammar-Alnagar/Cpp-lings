@@ -1,7 +1,6 @@
 #pragma once
 #include <stdexcept>
 #include <string>
-#include <cuda_runtime.h>
 
 namespace hpc {
 
@@ -9,18 +8,6 @@ class HPCException : public std::runtime_error {
 public:
     explicit HPCException(const std::string& msg) 
         : std::runtime_error(msg) {}
-};
-
-class CUDAError : public HPCException {
-public:
-    explicit CUDAError(cudaError_t error, const std::string& msg)
-        : HPCException(msg + " (CUDA Error: " + std::string(cudaGetErrorString(error)) + ")"),
-          error_code_(error) {}
-
-    cudaError_t error_code() const noexcept { return error_code_; }
-
-private:
-    cudaError_t error_code_;
 };
 
 class MatrixError : public HPCException {
@@ -42,6 +29,25 @@ public:
         : HPCException("Failed to allocate " + std::to_string(size) + " bytes") {}
 };
 
+} // namespace hpc
+
+#ifdef __CUDACC__
+#include <cuda_runtime.h>
+
+namespace hpc {
+
+class CUDAError : public HPCException {
+public:
+    explicit CUDAError(cudaError_t error, const std::string& msg)
+        : HPCException(msg + " (CUDA Error: " + std::string(cudaGetErrorString(error)) + ")"),
+          error_code_(error) {}
+
+    cudaError_t error_code() const noexcept { return error_code_; }
+
+private:
+    cudaError_t error_code_;
+};
+
 inline void check_cuda(cudaError_t error, const std::string& msg = "CUDA operation failed") {
     if (error != cudaSuccess) {
         throw CUDAError(error, msg);
@@ -55,3 +61,4 @@ inline void check_cuda(cudaError_t error, const std::string& msg = "CUDA operati
     } while(0)
 
 } // namespace hpc
+#endif
