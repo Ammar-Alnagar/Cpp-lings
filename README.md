@@ -172,7 +172,7 @@ A modular image processing system demonstrating advanced OOP, concurrency, and g
 
 ### Exercise Format
 
-Every exercise includes:
+Every exercise file contains:
 - Working code with intentional errors
 - Clear instructions on what to fix
 - Expected behavior after correction
@@ -181,9 +181,9 @@ Every exercise includes:
 ## Building and Running Examples
 
 ### Prerequisites
-- C++ compiler supporting C++17 or later
-- CMake 3.8+ (for CMake examples)
-- Make (for Makefile examples)
+- C++ compiler supporting C++17 or later (GCC 7+, Clang 5+, MSVC 2017+)
+- CMake 3.8+ (for some exercises)
+- Make (for Makefile exercises)
 
 ### Building Examples
 
@@ -199,6 +199,18 @@ mkdir build && cd build
 cmake ..
 make
 ./executable_name
+```
+
+### Using the Makefile
+```bash
+make                    # Build all projects
+make build_project1     # Build Task Manager project
+make build_project2     # Build Database Engine project
+make build_project3     # Build Image Processor project
+make run_project1       # Build and run Task Manager
+make run_project2       # Build and run Database Engine
+make run_project3       # Build and run Image Processor
+make clean              # Remove build directory
 ```
 
 ### Compiler Flags Used
@@ -221,7 +233,11 @@ Each chapter follows this format:
 
 ## Contributing
 
-This project welcomes contributions! If you find errors or have suggestions for improvements, please submit a pull request or open an issue.
+This project welcomes contributions! If you find errors or have suggestions for improvements:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ### Ways to Contribute
 - Report bugs or typos
