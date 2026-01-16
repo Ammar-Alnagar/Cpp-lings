@@ -2,6 +2,8 @@
 #include <iostream>
 #include <cassert>
 
+using namespace hpc;
+
 int main() {
     std::cout << "=== HPC Toolkit Test Suite ===" << std::endl;
 
