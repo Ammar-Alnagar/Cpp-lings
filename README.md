@@ -8,10 +8,11 @@ A comprehensive educational project designed to teach C++ from beginner level to
 2. [Prerequisites](#prerequisites)
 3. [Course Structure](#course-structure)
 4. [Chapters Overview](#chapters-overview)
-5. [How to Use This Course](#how-to-use-this-course)
-6. [Building and Running Examples](#building-and-running-examples)
-7. [Contributing](#contributing)
-8. [License](#license)
+5. [Projects](#projects)
+6. [How to Use This Course](#how-to-use-this-course)
+7. [Building and Running Examples](#building-and-running-examples)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ## Introduction
 
@@ -147,6 +148,19 @@ The course is organized into 15 progressive chapters, each building upon the pre
 - Concepts (C++20)
 - Modules (C++20)
 - Coroutines (C++20)
+
+## Projects
+
+This curriculum includes three comprehensive hands-on projects that integrate multiple concepts:
+
+### Project 1: Task Management System
+A console-based application demonstrating OOP, STL containers, memory management, and file I/O.
+
+### Project 2: Simple Database Engine
+A key-value database engine showcasing templates, generic programming, and serialization.
+
+### Project 3: Image Processing Pipeline
+A modular image processing system demonstrating advanced OOP, concurrency, and generic programming.
 
 ## How to Use This Course
 
