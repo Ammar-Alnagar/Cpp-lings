@@ -4,6 +4,7 @@
 #define ACTIVATIONS_H
 
 #include "engine.h"
+#include "layers.h"
 
 // Activation layer
 struct ActivationLayer : public Layer {
@@ -12,12 +13,12 @@ struct ActivationLayer : public Layer {
         SIGMOID,
         TANH
     };
-    
+
     ActivationType activationType;
-    
+
     ActivationLayer(ActivationType actType);
     ~ActivationLayer() = default;
-    
+
     void forward(Tensor* input, Tensor* output, cublasHandle_t handle) override;
     void loadWeights(const float* weights, size_t weightCount) override;
 };

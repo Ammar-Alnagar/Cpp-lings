@@ -1,13 +1,19 @@
 #pragma once
 #include "matrix.hpp"
 #include "vector.hpp"
-#include "gpu_wrappers.hpp"
-#include "gpu_kernels.hpp"
 #include "utils.hpp"
 #include "exceptions.hpp"
 
+#ifdef __CUDACC__
+#include "gpu_wrappers.hpp"
+#include "gpu_kernels.hpp"
+#include "optimized_kernels.hpp"
+#include "stream_manager.hpp"
+#endif
+
 namespace hpc {
 
+#ifdef __CUDACC__
 template<typename T>
 class MatrixGPU {
 public:
@@ -64,5 +70,6 @@ private:
     size_t size_;
     UnifiedMemory<T> data_;
 };
+#endif
 
 } // namespace hpc

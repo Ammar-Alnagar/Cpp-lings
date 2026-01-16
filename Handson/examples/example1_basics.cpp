@@ -1,6 +1,8 @@
 #include "hpc_toolkit.hpp"
 #include <iostream>
 
+using namespace hpc;
+
 int main() {
     print_header("Example 1: Basic Operations");
 
