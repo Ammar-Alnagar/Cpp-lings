@@ -200,6 +200,9 @@ public:
         std::cout << "]" << std::endl;
     }
 
+    void add_gpu(const Vector& other);
+    void scale_gpu(T scalar);
+
     friend void swap(Vector& a, Vector& b) noexcept {
         using std::swap;
         swap(a.size_, b.size_);
