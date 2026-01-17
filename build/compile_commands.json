@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/ammar/work/Cpp-lings/build",
+  "command": "/usr/lib64/ccache/clang++ -g -std=gnu++17 -o projects/CMakeFiles/task_manager.dir/task_manager.cpp.o -c /home/ammar/work/Cpp-lings/projects/task_manager.cpp",
+  "file": "/home/ammar/work/Cpp-lings/projects/task_manager.cpp",
+  "output": "projects/CMakeFiles/task_manager.dir/task_manager.cpp.o"
+},
+{
+  "directory": "/home/ammar/work/Cpp-lings/build",
+  "command": "/usr/lib64/ccache/clang++ -g -std=gnu++17 -o projects/CMakeFiles/database_engine.dir/database_engine.cpp.o -c /home/ammar/work/Cpp-lings/projects/database_engine.cpp",
+  "file": "/home/ammar/work/Cpp-lings/projects/database_engine.cpp",
+  "output": "projects/CMakeFiles/database_engine.dir/database_engine.cpp.o"
+},
+{
+  "directory": "/home/ammar/work/Cpp-lings/build",
+  "command": "/usr/lib64/ccache/clang++ -g -std=gnu++17 -o projects/CMakeFiles/image_processor.dir/image_processor.cpp.o -c /home/ammar/work/Cpp-lings/projects/image_processor.cpp",
+  "file": "/home/ammar/work/Cpp-lings/projects/image_processor.cpp",
+  "output": "projects/CMakeFiles/image_processor.dir/image_processor.cpp.o"
+}
+]

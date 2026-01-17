@@ -1,0 +1,158 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-3d6f880a232df284da0f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "projects",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-projects-Debug-967d1cca4360de0c305c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "projects",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CppLings",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "CppProjects",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "database_engine::@4ff29923658bfebfdba7",
+					"jsonFile" : "target-database_engine-Debug-1c95f0d2391fc396238c.json",
+					"name" : "database_engine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "docs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-docs-Debug-1e60ec723e95738f5504.json",
+					"name" : "docs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exercises::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exercises-Debug-d487c0472e0221cf0e1f.json",
+					"name" : "exercises",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "image_processor::@4ff29923658bfebfdba7",
+					"jsonFile" : "target-image_processor-Debug-674f27a9ce5e1bbcd79e.json",
+					"name" : "image_processor",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "project1::@4ff29923658bfebfdba7",
+					"jsonFile" : "target-project1-Debug-d5dd27e962d15359b7e7.json",
+					"name" : "project1",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "project2::@4ff29923658bfebfdba7",
+					"jsonFile" : "target-project2-Debug-68b9a769fab752628169.json",
+					"name" : "project2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "project3::@4ff29923658bfebfdba7",
+					"jsonFile" : "target-project3-Debug-444173e4bead0eb34049.json",
+					"name" : "project3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "task_manager::@4ff29923658bfebfdba7",
+					"jsonFile" : "target-task_manager-Debug-512c6636423b96dc0747.json",
+					"name" : "task_manager",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ammar/work/Cpp-lings/build",
+		"source" : "/home/ammar/work/Cpp-lings"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
