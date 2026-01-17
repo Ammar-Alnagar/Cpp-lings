@@ -19,13 +19,11 @@ int main() {
 
   // TODO: Print the result in the format:c
   // "The area of a rectangle with length X.X and width Y.Y is Z.Z"
-
-  double length = 5.5;
-  double width = 3.2;
-
-  auto area = length * width;
-  std::println("the area of the rectangle with length {} and width {} is {}",
-               length, width, area);
-
+  int x = 0;
+  int y = 1000;
+  for (int i = x; i <= y; i++) {
+    std::cout << x << std::endl;
+    ++x;
+  }
   return 0;
 }

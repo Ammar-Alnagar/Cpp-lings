@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cuda/context/Learn-CUDA-Programming" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cuda/context/cuda-examples" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cuda/context/cuda-programming" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cuda/context/cuda-samples" vcs="Git" />
   </component>
 </project>
