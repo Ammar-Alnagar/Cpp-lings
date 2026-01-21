@@ -1,4 +1,3 @@
-
 # C++ Learning Curriculum: From Beginner to Master
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Ammar-Alnagar/Cpp-lings)
 A comprehensive educational project designed to teach C++ from beginner level to advanced/master level, with hands-on exercises that include intentional errors for students to identify and fix.
