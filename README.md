@@ -15,6 +15,17 @@ A comprehensive educational project designed to teach C++ from beginner level to
 9. [Contributing](#contributing)
 10. [License](#license)
 
+## Repository Structure
+
+This repository is organized into several directories, each serving a specific purpose:
+
+- **exercises/**: Contains hands-on programming exercises for each chapter of the C++ learning curriculum.
+- **projects/**: Includes comprehensive hands-on projects that integrate multiple C++ concepts.
+- **Ap-cpp/**: Contains advanced C++ topics, including concurrency and template metaprogramming.
+- **Compiler/**: Provides materials for understanding compiler design with LLVM and MLIR.
+- **Cuda/**: A comprehensive curriculum for GPU programming with CUDA.
+- **Handson/**: Contains practical, hands-on examples and a test suite.
+
 ## Introduction
 
 This educational project aims to provide a structured learning path for C++ programming, taking students from basic syntax to advanced modern C++ features. Additionally, it includes a comprehensive CUDA programming curriculum for GPU computing. Each chapter includes theoretical explanations, practical examples, and exercises with intentional errors that students must identify and fix to reinforce their understanding.
